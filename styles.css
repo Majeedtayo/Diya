@@ -29,9 +29,6 @@ h1.scrolling-text {
     white-space: nowrap; /* Prevents the text from wrapping */
     font-style: italic; /* Text in italics */
     animation: scroll 20s linear infinite; /* Scrolling animation */
-    border: 2px solid white; /* White border */
-    padding: 10px 20px; /* Padding around the header */
-    border-radius: 20px; /* Rounded corners */
 }
 
 @keyframes scroll {
@@ -73,15 +70,13 @@ main {
     color: #fff; /* White text color */
 }
 
-.thumbnails {
+.videos {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Spacing between thumbnails */
+    gap: 20px; /* Spacing between videos */
 }
 
-.video-thumbnail {
-    width: 150px; /* Thumbnail width */
-    height: auto;
-    border: 5px solid #fff; /* White border */
-    border-radius: 10px; /* Rounded corners */
+.video-gallery video {
+    width: 200px; /* Resize videos to be square */
+    height: 200px;
 }

@@ -11,6 +11,18 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    overflow: hidden; /* Ensures the scrolling effect */
+}
+
+h1.scrolling-text {
+    animation: scroll 20s linear infinite; /* Adjust the duration and timing as needed */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    font-style: italic; /* Text in italics */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 
 main {
@@ -24,15 +36,11 @@ main {
 
 .center-image img {
     border-radius: 50%; /* Round image */
-    width: 200px;
-    height: 200px;
+    width: 300px; /* Enlarge the image */
+    height: 300px;
     border: 5px solid #fff; /* White border around image */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White shadow */
     margin-bottom: 20px;
-}
-
-.text {
-    margin-bottom: 50px;
 }
 
 .video-gallery {
@@ -50,5 +58,7 @@ main {
 }
 
 .video-gallery video {
-    margin: 0 10px;
+    width: 100%; /* Ensure video fits within container */
+    max-width: 600px; /* Adjust maximum width as needed */
+    height: auto;
 }

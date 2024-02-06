@@ -15,9 +15,9 @@ header {
 }
 
 h1.scrolling-text {
-    animation: scroll 20s linear infinite; /* Adjust the duration and timing as needed */
     white-space: nowrap; /* Prevents the text from wrapping */
     font-style: italic; /* Text in italics */
+    animation: scroll 20s linear infinite; /* Scrolling animation */
 }
 
 @keyframes scroll {

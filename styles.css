@@ -2,22 +2,36 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d1b2a; /* Dark blue background color */
+    background-image: url('dark_skies.jpg'); /* Dark skies background image */
+    background-size: cover;
+    background-position: center;
     color: #fff; /* White text color */
 }
 
 header {
-    background-color: #1e4877; /* Dark blue header background color */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     color: white;
     text-align: center;
     padding: 20px;
-    overflow: hidden; /* Ensures the scrolling effect */
+    position: fixed;
+    width: 100%;
+    z-index: 1; /* Ensures header stays on top of other elements */
+    animation: floating 3s ease infinite alternate; /* Romantic floating animation */
+}
+
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 
 h1.scrolling-text {
     white-space: nowrap; /* Prevents the text from wrapping */
     font-style: italic; /* Text in italics */
     animation: scroll 20s linear infinite; /* Scrolling animation */
+    border: 2px solid white; /* White border */
+    padding: 10px 20px; /* Padding around the header */
+    border-radius: 20px; /* Rounded corners */
 }
 
 @keyframes scroll {
@@ -26,7 +40,7 @@ h1.scrolling-text {
 }
 
 main {
-    padding: 20px;
+    padding: 100px 20px 20px; /* Added top padding to account for fixed header */
 }
 
 .center-content {
@@ -50,22 +64,24 @@ main {
     margin-bottom: 50px;
 }
 
-.Favorite videos of us {
+.video-gallery {
     margin-top: 50px;
     text-align: center;
 }
 
-.Favorite videos of us h2 {
-    color: #1e4877; /* Dark blue text color */
+.video-gallery h2 {
+    color: #fff; /* White text color */
 }
 
-.videos {
+.thumbnails {
     display: flex;
     justify-content: center;
+    gap: 20px; /* Spacing between thumbnails */
 }
 
-.Favorite videos of us video {
-    width: 100%; /* Ensure video fits within container */
-    max-width: 600px; /* Adjust maximum width as needed */
+.video-thumbnail {
+    width: 150px; /* Thumbnail width */
     height: auto;
+    border: 5px solid #fff; /* White border */
+    border-radius: 10px; /* Rounded corners */
 }

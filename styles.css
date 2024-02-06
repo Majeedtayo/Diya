@@ -50,12 +50,12 @@ main {
     margin-bottom: 50px;
 }
 
-.video-gallery {
+.Favorite videos of us {
     margin-top: 50px;
     text-align: center;
 }
 
-.video-gallery h2 {
+.Favorite videos of us h2 {
     color: #1e4877; /* Dark blue text color */
 }
 
@@ -64,7 +64,7 @@ main {
     justify-content: center;
 }
 
-.video-gallery video {
+.Favorite videos of us video {
     width: 100%; /* Ensure video fits within container */
     max-width: 600px; /* Adjust maximum width as needed */
     height: auto;
